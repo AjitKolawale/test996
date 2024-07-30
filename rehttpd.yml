@@ -1,0 +1,9 @@
+---
+- name: Remoe httpd package
+  hosts: all
+  become: true 
+  tasks:
+  - name: removethe httpds
+    yum:
+     name: httpd
+     state: absent 

@@ -1,0 +1,9 @@
+---
+- name: install webserver pakeage
+  hosts: test
+  become: true
+  tasks:
+  - name: install http pakeage
+    yum:
+     name: httpd
+     state: installed  

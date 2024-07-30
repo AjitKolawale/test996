@@ -1,0 +1,9 @@
+---
+- name: need to insatll git 
+  hosts: all
+  become: true
+  tasks:
+  - name: install git to verify the chnages
+    yum:
+     name: git 
+     state: installed  
